@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,8 +11,8 @@ namespace Laboratorio_AlexanderZelaya
     {
         private string nombre;
         private int edad;
-        private Departamento departamento;
-        private Municipio municipio;
+        private string departamento;
+        private string municipio;
 
         public string Nombre
         {
@@ -25,20 +26,24 @@ namespace Laboratorio_AlexanderZelaya
             set => edad = value;
         }
 
-        public Departamento Departamento
+        public string Departamento
         {
             get => departamento;
             set => departamento = value;
         }
-        public Municipio Municipio
+
+        public string Municipio
         {
             get => municipio;
             set => municipio = value;
         }
 
-        public void obtenerDatosUsuario()
+        public Persona (string nombre, int edad, string departamento, string municipio)
         {
-
+            Nombre = nombre;
+            Edad = edad;
+            Departamento = departamento;
+            Municipio = municipio;
         }
     }
 }
