@@ -37,11 +37,19 @@ namespace Laboratorio_AlexanderZelaya
                     WriteLine("================================\n" +
                               "         Bienvenido :)\n" +
                               "================================");
-
-                    foreach(var DepartamentosMunicipios in MunicipioDepartamento)
-                    {
-                        WriteLine(DepartamentosMunicipios);
-                    }
+                    WriteLine("Municipios Disponible: \n" +
+                        "Chalatenango: { Potonico, La Palma, Nombre de Jesús, San Ignacio, Citalá, San Antonio los Ranchos, Cancasque, Azacualpa }\n" +
+                        "Santa Ana: { Chalchuapa, Coatepeque, El Congo, El Porvenir, Masahuat, Texistepeque, San Antonio Pajonal, Santa Rosa Guachipilín }\n" +
+                        "San Miguel: { Carolina, Chapeltique,Chinamec, Chirilagua, Ciudad Barrios, Comacarán, Lolotique, Quelepa }\n" +
+                        "San Salvador: {Aguilares, Apopa, Ciudad Delgado, Cuscatancingo, El Paisnal, Guazapa, Ilopango, Nejapa}\n" +
+                        "Ahuachapán { Atiquizaya, El refugio, Guaymango, Jujutla, San Lorenzo, Tacuba, Turín, San Pedro Puxtla }\n" +
+                        "La Libertad: { Antiguo Cuscatlán, Ciudad Arce, Jayaque, Jicalapa, Quezaltepeque, Sacacoyo, San Matías, Talnique }\n" +
+                        "Sonsonate: { Armenia, Caluco, Izalco, Nahulingo, San Julián, Sonzacate, Cuisnahuat, Salcoatitán }\n" +
+                        "Cuscatlán: { Candelaria, El Carmen, El Rosario, Monte San Juán, San Rafael Cedros, San Cristobal, San Ramón, Tenancingo }\n" +
+                        "Cabañas: { Sensuntepeque, Cinquera, Dolores, Guacotecti, Jutiapa, San Isidro, Tejutepeque, Victoria }\n" +
+                        "San Vicente: { Guadalupe, San Idelfonso, San Lorenzo, Santa Clara, Santo Domingo, Tecoluca, Tepetitán, Verapaz }\n" +
+                        "Usulután: { Berlín, California, El Triunfo, Jiquilisco, Jucuarán, Ozatlán, Puerto El Triunfo, San Augustín }\n" +
+                        "La Paz: { Zacatecoluca, El Rosario, Jerusalén, San Emigdio, Chimameca, San Luis Talpa, Tapalhuaca, Santiago Nonualco }");
 
                     WriteLine("================================\n" +
                               "Ingrese los datos de su Usuario\n" +
@@ -54,6 +62,7 @@ namespace Laboratorio_AlexanderZelaya
                     string departamento = ReadLine();
                     Write("Municipio: ");
                     string municipio = ReadLine();
+                    Clear();
 
                     if (!MunicipioDepartamento[departamento].Contains(municipio))
                     {
